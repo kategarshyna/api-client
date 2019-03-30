@@ -94,4 +94,12 @@ class Response
     {
         return isset($this->response[$key]);
     }
+
+    /**
+     * @return mixed
+     */
+    public function getRaw()
+    {
+        return $this->response;
+    }
 }
